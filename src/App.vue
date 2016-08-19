@@ -1,9 +1,8 @@
 <template>
   <div id="app">
-    <form @submit.prevent="">
+    <form>
       <div class="form-group">
-        <!--<date-picker :val.sync="curDate" type="date"></date-picker>-->
-        <date-picker :val.sync="curDate" type="date-time"></date-picker>
+        <num-picker :count.sync="count" :max="10"></num-picker>
       </div>
     </form>
 
@@ -11,15 +10,14 @@
 </template>
 
 <script>
-  import DatePicker from './components/date-picker/date-picker.vue'
+  import NumPicker from './components/num-picker/num-picker.vue'
 
   export default {
     components: {
-      'date-picker': DatePicker
+      'num-picker': NumPicker
     },
     data () {
       return {
-        curDate: ''
       }
     }
   }

@@ -2,7 +2,7 @@
   "name": "my-project",
   "version": "1.0.0",
   "description": "test",
-  "author": "吴建鹏 <wujp@dingdatech.com>",
+  "author": "zhulina",
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
